@@ -1,5 +1,5 @@
 name: First React App With Github Actions - Workflow Demo
-on: push
+on: [push, workflow_dispatch]
 jobs:
   test:
     runs-on: ubuntu-latest # the server does not have our github repo code automatically ! we should get the code onto the server
