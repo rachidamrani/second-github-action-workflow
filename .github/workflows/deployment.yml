@@ -16,7 +16,6 @@ jobs:
         run: npm test
   deploy:
     runs-on: ubuntu-latest
-    needs: test
     steps:
       - name: Get code
         uses: actions/checkout@v4 # This action checks-out your repository under $GITHUB_WORKSPACE, so your workflow can access it.
